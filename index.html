@@ -15,26 +15,6 @@
       color: #ffffff;
       overflow-x: hidden;
     }
-    #intro-gif {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: #000;
-      z-index: 9999;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      opacity: 1;
-      transition: opacity 0.5s ease;
-    }
-    #intro-gif img {
-      max-width: 100%;
-      max-height: 100%;
-    }
-    #content {
-      display: none;
-    }
     header {
       padding: 25px 40px;
       background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
@@ -121,57 +101,75 @@
       text-decoration: none;
     }
   </style>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const gif = document.getElementById('intro-gif');
-      const content = document.getElementById('content');
-      setTimeout(() => {
-        gif.style.opacity = '0';
-        gif.style.transition = 'opacity 0.5s ease';
-        setTimeout(() => {
-          gif.style.display = 'none';
-          content.style.display = 'block';
-        }, 500);
-      }, 3000);
-    });
-  </script>
 </head>
 <body>
-  <div id="intro-gif">
-    <img src="20.gif" alt="Fixbet Intro">
-  </div>
-  <div id="content">
-    <header>
-      <h1>Cenabet & Güvenilir Platformlar</h1>
-      <a href="https://t.me/C3ren1" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram" style="width: 20px; height: 20px;"> Telegram
-      </a>
-    </header>
+  <header>
+    <h1>Cenabet & Güvenilir Platformlar</h1>
+    <a href="https://t.me/C3ren1" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram" style="width: 20px; height: 20px;"> Telegram
+    </a>
+  </header>
 
-    <section class="grid">
-      <div class="card">
-        <img src="https://via.placeholder.com/300x100.png?text=Fixbet+1" alt="Fixbet 1">
-        <h2>Fixbet Plus</h2>
-        <p>750₺ Deneme Bonusu<br>Yüksek RTP oranıyla öne çıkar.</p>
-        <a href="https://mikrofonkrali.com" target="_blank">Şimdi İncele</a>
-      </div>
-      <div class="card">
-        <img src="https://via.placeholder.com/300x100.png?text=Fixbet+2" alt="Fixbet 2">
-        <h2>Fixbet Max</h2>
-        <p>910₺ Deneme Bonusu<br>Mobil uyumlu alt yapıya sahiptir.</p>
-        <a href="https://mikrofonkrali.com" target="_blank">Şimdi İncele</a>
-      </div>
-      <div class="card">
-        <img src="https://via.placeholder.com/300x100.png?text=Fixbet+3" alt="Fixbet 3">
-        <h2>Fixbet Zone</h2>
-        <p>860₺ Deneme Bonusu<br>Yeni üyeler için ideal seçenek.</p>
-        <a href="https://mikrofonkrali.com" target="_blank">Şimdi İncele</a>
-      </div>
-    </section>
+  <section class="grid">
+    <!-- 9 örnek box -->
+    <div class="card">
+      <img src="20.gif" alt="Fixbet 1">
+      <h2>Fixbet Plus</h2>
+      <p>750₺ Deneme Bonusu<br>Yüksek RTP oranıyla öne çıkar.</p>
+      <a href="https://mikrofonkrali.com" target="_blank">Şimdi İncele</a>
+    </div>
+    <div class="card">
+      <img src="20.gif" alt="Fixbet 2">
+      <h2>Fixbet Max</h2>
+      <p>910₺ Deneme Bonusu<br>Mobil uyumlu alt yapıya sahiptir.</p>
+      <a href="https://mikrofonkrali.com" target="_blank">Şimdi İncele</a>
+    </div>
+    <div class="card">
+      <img src="20.gif" alt="Fixbet 3">
+      <h2>Fixbet Zone</h2>
+      <p>860₺ Deneme Bonusu<br>Yeni üyeler için ideal seçenek.</p>
+      <a href="https://mikrofonkrali.com" target="_blank">Şimdi İncele</a>
+    </div>
+    <div class="card">
+      <img src="20.gif" alt="Fixbet 4">
+      <h2>Fixbet Arena</h2>
+      <p>800₺ Deneme Bonusu<br>Hızlı ödeme seçenekleriyle popüler.</p>
+      <a href="https://mikrofonkrali.com" target="_blank">Şimdi İncele</a>
+    </div>
+    <div class="card">
+      <img src="20.gif" alt="Fixbet 5">
+      <h2>Fixbet Star</h2>
+      <p>650₺ Deneme Bonusu<br>Kullanıcı dostu arayüz sunar.</p>
+      <a href="https://mikrofonkrali.com" target="_blank">Şimdi İncele</a>
+    </div>
+    <div class="card">
+      <img src="20.gif" alt="Fixbet 6">
+      <h2>Fixbet Pro</h2>
+      <p>700₺ Deneme Bonusu<br>Gelişmiş kampanya sistemiyle öne çıkar.</p>
+      <a href="https://mikrofonkrali.com" target="_blank">Şimdi İncele</a>
+    </div>
+    <div class="card">
+      <img src="20.gif" alt="Fixbet 7">
+      <h2>Fixbet Nova</h2>
+      <p>840₺ Deneme Bonusu<br>Yenilikçi tasarımıyla dikkat çeker.</p>
+      <a href="https://mikrofonkrali.com" target="_blank">Şimdi İncele</a>
+    </div>
+    <div class="card">
+      <img src="20.gif" alt="Fixbet 8">
+      <h2>Fixbet Core</h2>
+      <p>790₺ Deneme Bonusu<br>7/24 destek hattıyla güven verir.</p>
+      <a href="https://mikrofonkrali.com" target="_blank">Şimdi İncele</a>
+    </div>
+    <div class="card">
+      <img src="20.gif" alt="Fixbet 9">
+      <h2>Fixbet Turbo</h2>
+      <p>980₺ Deneme Bonusu<br>En yüksek kazanç oranlarıyla bilinir.</p>
+      <a href="https://mikrofonkrali.com" target="_blank">Şimdi İncele</a>
+    </div>
+  </section>
 
-    <footer>
-      <p>&copy; 2025 Cenabet Dijital Rehber • <a href="https://t.me/C3ren1" target="_blank">İletişim (Telegram)</a></p>
-    </footer>
-  </div>
+  <footer>
+    <p>&copy; 2025 Cenabet Dijital Rehber • <a href="https://t.me/C3ren1" target="_blank">İletişim (Telegram)</a></p>
+  </footer>
 </body>
 </html>
