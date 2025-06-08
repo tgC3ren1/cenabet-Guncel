@@ -3,120 +3,109 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cenabet | Dijital Platform Rehberi</title>
-  <meta name="description" content="Cenabet ile en güncel bağlantılar, yüksek bonuslar ve özel kampanyalar bir arada. Hızlı giriş, güvenilir altyapı ve farklı deneyim seni bekliyor!" />
-  <meta name="keywords" content="cenabet, cenabet güncel giriş, cenabet giriş adresi, cenabet yeni adres, cenabet bağlantı, bonus, dijital eğlence, yönlendirme, en iyi siteler" />
+  <title>Cenabet Güncel Giriş • Deneme Bonusu Platformları</title>
+  <meta name="description" content="Cenabet güncel giriş adresleri ve en güvenilir dijital platformlar burada. Yüksek deneme bonusu ve %100 mobil uyumlu yapılarla hemen keşfet." />
+  <meta name="keywords" content="cenabet, cenabet güncel giriş, cenabet yeni adres, cenabet bonus, fixbet, rtp yüksek site, güvenilir platformlar, deneme bonusu siteleri" />
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" />
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: radial-gradient(circle at top left, #141e30, #243b55);
-      color: #ffffff;
-      overflow-x: hidden;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
     }
-    #intro-gif {
+    #loader {
       position: fixed;
-      top: 0; left: 0;
       width: 100vw;
       height: 100vh;
       background: #000;
-      z-index: 9999;
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
+      z-index: 9999;
     }
-    #intro-gif img {
-      max-width: 100%;
-      max-height: 100%;
+    #loader img {
+      width: 250px;
     }
-    #content {
+    #site {
       display: none;
+      animation: fadeIn 1s ease forwards;
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
     }
     header {
-      padding: 25px 40px;
-      background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+      padding: 25px;
+      background: #111;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      box-shadow: 0 0 15px rgba(0,0,0,0.4);
     }
     header h1 {
-      font-size: 32px;
+      font-size: 26px;
       color: #facc15;
-      margin: 0;
     }
     header a {
-      display: flex; 
-      align-items: center; 
-      gap: 8px; 
-      color: #000; 
-      background: #facc15; 
-      padding: 8px 16px; 
-      border-radius: 6px; 
-      text-decoration: none; 
+      background: #facc15;
+      color: #000;
+      padding: 8px 16px;
+      text-decoration: none;
       font-weight: bold;
-    }
-    header a img {
-      width: 20px; 
-      height: 20px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
     }
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 25px;
-      padding: 50px 40px;
+      gap: 30px;
+      padding: 50px 30px;
     }
     .card {
-      background: rgba(255, 255, 255, 0.05);
-      backdrop-filter: blur(10px);
-      border-radius: 16px;
+      background: rgba(255,255,255,0.05);
       padding: 20px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+      border-radius: 14px;
       text-align: center;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      transition: 0.3s ease;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
     .card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 12px 28px rgba(0,0,0,0.4);
+      transform: translateY(-6px);
+      box-shadow: 0 0 20px rgba(255,255,255,0.2);
     }
     .card img {
-      width: 100%;
-      max-height: 120px;
+      max-width: 100%;
+      height: 100px;
       object-fit: contain;
       margin-bottom: 15px;
     }
     .card h2 {
-      margin: 0;
-      font-size: 22px;
+      font-size: 20px;
       color: #00e0ff;
+      margin: 10px 0;
     }
     .card p {
-      font-size: 15px;
-      color: #bbb;
-      margin-top: 10px;
+      font-size: 14px;
+      color: #ccc;
     }
     .card a {
       display: inline-block;
       margin-top: 12px;
-      padding: 10px 16px;
-      background: linear-gradient(to right, #facc15, #ffe500);
+      background: #facc15;
       color: #000;
-      border-radius: 6px;
+      padding: 10px 16px;
       font-weight: bold;
       text-decoration: none;
-      transition: background 0.2s ease;
-    }
-    .card a:hover {
-      background: #fff000;
+      border-radius: 8px;
     }
     footer {
-      background-color: #111;
-      text-align: center;
+      background: #0b0b0b;
       padding: 30px 20px;
-      color: #aaa;
+      text-align: center;
+      color: #999;
       font-size: 14px;
-      margin-top: 50px;
     }
     footer a {
       color: #facc15;
@@ -124,20 +113,52 @@
     }
   </style>
   <script>
-    window.onload = function() {
+    window.onload = () => {
       setTimeout(() => {
-        document.getElementById('intro-gif').style.display = 'none';
-        document.getElementById('content').style.display = 'block';
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("site").style.display = "block";
       }, 3000);
     };
   </script>
 </head>
 <body>
-  <div id="intro-gif">
-    <img src="20.gif" alt="Fixbet Intro">
+  <div id="loader">
+    <img src="20.gif" alt="Giriş Yükleniyor">
   </div>
-  <div id="content">
-    <!-- existing content -->
+
+  <div id="site">
+    <header>
+      <h1>Cenabet & Güvenilir Platformlar</h1>
+      <a href="https://t.me/C3ren1" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" width="20" />
+        Telegram
+      </a>
+    </header>
+
+    <div class="grid">
+      <div class="card">
+        <img src="20.gif" alt="Fixbet 1" />
+        <h2>Fixbet Plus</h2>
+        <p>750₺ Deneme Bonusu<br>Yüksek RTP oranıyla öne çıkar.</p>
+        <a href="https://mikrofonkrali.com" target="_blank">Şimdi İncele</a>
+      </div>
+      <div class="card">
+        <img src="20.gif" alt="Fixbet 2" />
+        <h2>Fixbet Max</h2>
+        <p>910₺ Deneme Bonusu<br>Mobil uyumlu alt yapıya sahiptir.</p>
+        <a href="https://mikrofonkrali.com" target="_blank">Şimdi İncele</a>
+      </div>
+      <div class="card">
+        <img src="20.gif" alt="Fixbet 3" />
+        <h2>Fixbet Zone</h2>
+        <p>860₺ Deneme Bonusu<br>Yeni üyeler için ideal seçenek.</p>
+        <a href="https://mikrofonkrali.com" target="_blank">Şimdi İncele</a>
+      </div>
+    </div>
+
+    <footer>
+      © 2025 Cenabet Dijital Rehber • <a href="https://t.me/C3ren1" target="_blank">İletişim (Telegram)</a>
+    </footer>
   </div>
 </body>
 </html>
